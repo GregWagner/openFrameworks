@@ -1,7 +1,6 @@
 #include "ofApp.h"
 
-//--------------------------------------------------------------
-void ofApp::setup(){	 
+void ofApp::setup() {	 
     eventString = "Alpha";
 
 	vagRounded.load("vag.ttf", 32);
@@ -12,14 +11,10 @@ void ofApp::setup(){
 	blendMode = OF_BLENDMODE_ALPHA;
 }
 
-
-//--------------------------------------------------------------
-void ofApp::update(){
-
+void ofApp::update() {
 }
 
-//--------------------------------------------------------------
-void ofApp::draw(){
+void ofApp::draw() {
 	
     timeString = "Press 1 - 5 to switch blend modes";
 	
@@ -39,7 +34,6 @@ void ofApp::draw(){
 
     ofSetColor(255, 255, 255,255);
     
-    
     ofEnableBlendMode(blendMode);
     
     rainbow.draw(mouseX, mouseY);
@@ -47,9 +41,7 @@ void ofApp::draw(){
     ofDisableBlendMode();
 }
 
-
-//--------------------------------------------------------------
-void ofApp::keyPressed  (int key){ 
+void ofApp::keyPressed(int key) { 
 
     switch (key) {
         case 49:
@@ -77,52 +69,32 @@ void ofApp::keyPressed  (int key){
     }
 }
 
-//--------------------------------------------------------------
-void ofApp::keyReleased(int key){ 
-
+void ofApp::keyReleased(int key) { 
 }
 
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-
+void ofApp::mouseMoved(int x, int y) {
 }
 
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
+void ofApp::mouseDragged(int x, int y, int button) {
 }
 
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-
+void ofApp::mousePressed(int x, int y, int button) {
 }
 
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-
+void ofApp::mouseReleased(int x, int y, int button) {
 }
 
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-
+void ofApp::mouseEntered(int x, int y) {
 }
 
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-
+void ofApp::mouseExited(int x, int y) {
 }
 
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
+void ofApp::windowResized(int w, int h) {
 }
 
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
+void ofApp::gotMessage(ofMessage msg) {
 }
 
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
-
+void ofApp::dragEvent(ofDragInfo dragInfo) { 
 }
